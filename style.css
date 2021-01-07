@@ -1,19 +1,39 @@
-body {
+@font-face {
+  font-family: "Supply Mono";
+  src: URL("assets/Supply-Regular.otf") format("opentype");
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body { 
   background: rgb(12, 60, 236);
   background: -moz-linear-gradient(
-    90deg,
-    rgba(12, 60, 236, 1) 18%,
-    rgba(255, 90, 0, 1) 83%
+    180deg,
+    rgba(12, 60, 236, 1) 7%,
+    rgba(96, 70, 155, 1) 23%,
+    rgba(145, 76, 107, 1) 65%,
+    rgba(176, 80, 76, 1) 83%,
+    rgba(255, 172, 76, 1) 98%
   );
   background: -webkit-linear-gradient(
-    90deg,
-    rgba(12, 60, 236, 1) 18%,
-    rgba(255, 90, 0, 1) 83%
+    180deg,
+    rgba(12, 60, 236, 1) 7%,
+    rgba(96, 70, 155, 1) 23%,
+    rgba(145, 76, 107, 1) 65%,
+    rgba(176, 80, 76, 1) 83%,
+    rgba(255, 172, 76, 1) 98%
   );
   background: linear-gradient(
-    90deg,
-    rgba(12, 60, 236, 1) 18%,
-    rgba(255, 90, 0, 1) 83%
+    180deg,
+    rgba(12, 60, 236, 1) 7%,
+    rgba(96, 70, 155, 1) 23%,
+    rgba(145, 76, 107, 1) 65%,
+    rgba(176, 80, 76, 1) 83%,
+    rgba(255, 172, 76, 1) 98%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3cec",endColorstr="#ff5a00",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3cec",endColorstr="#ffac4c",GradientType=1);
+  font-family: "Supply Mono";
 }
