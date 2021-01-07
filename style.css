@@ -3,13 +3,16 @@
   src: URL("assets/Supply-Regular.otf") format("opentype");
 }
 
-html{
+html {
   height: 100%;
   width: 100%;
 }
 
-body { 
-  background: rgb(12, 60, 236);
+body {
+  --default-padding: 20px;
+  --margin-social-icons: 5px;
+  --width-social-icons: 25px;
+
   background: -moz-linear-gradient(
     180deg,
     rgba(12, 60, 236, 1) 7%,
@@ -37,3 +40,46 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3cec",endColorstr="#ffac4c",GradientType=1);
   font-family: "Supply Mono";
 }
+
+.social-media-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 25vh;
+  max-height: 200px;
+  box-sizing: border-box;
+  padding: var(--default-padding);
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-text{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: calc(var(--margin-social-icons) * 2);
+}
+
+.social-media-icons{
+
+}
+
+.social-media-icon{
+  width: var(--width-social-icons);
+  fill: white;
+  margin: var(--margin-social-icons);
+}
+
+.logo-fcb img{
+  width: 100px;    
+  height: auto;
+  margin: calc(var(--margin-social-icons) * 6) 0 0 0;
+}
+
+/* This applies from 768px onwards */
+@media (min-width: 768px) {
+  body {
+    background: rgb(12, 60, 236);
+  }
+}
+
