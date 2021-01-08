@@ -16,6 +16,8 @@ body {
   --wrapper-max-width: 1280px;
   --block-padding: 20px;
 
+  --title-font-size: 18px;
+
   background: linear-gradient(
     180deg,
     rgba(12, 60, 236, 1) 7%,
@@ -28,6 +30,7 @@ body {
   font-family: "Supply Mono";
 }
 
+/* general settings */
 .wrapper-nav {
   display: flex;
   justify-content: center;
@@ -45,6 +48,63 @@ body {
   margin: 0 auto;
   padding: var(--block-padding);
 }
+
+.block {
+  min-height: 300px;
+}
+
+#a-fcb,
+#nossos-cases,
+#beneficios {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pill-title {
+  border: 2px solid white;
+  border-radius: 25px;
+  width: fit-content;
+}
+
+.pill-title p {
+  font-size: var(--title-font-size);
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 15px;
+}
+
+/* specic blocks */
+
+.header-container > * {
+  margin-bottom: var(--block-padding);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title,
+.header-text {
+  text-align: center;
+  margin: 0;
+}
+
+.header-title {
+  font-size: var(--title-font-size);
+}
+
+.respiro {
+  width: 20px;
+  height: 5px;
+  background-color: black;
+}
+
+.header-text {
+  font-size: calc(var(--title-font-size) + 10px);
+}
+
+/* footer */
 
 .social-media-bar {
   display: flex;
@@ -65,31 +125,6 @@ body {
   margin-bottom: calc(var(--margin-social-icons) * 2);
 }
 
-.block {
-  height: 300px;
-}
-
-#a-fcb,
-#nossos-cases,
-#beneficios {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.pill-title{
-  border: 2px solid white;
-  border-radius: 25px;
-  width: fit-content;
-}
-
-
-.pill-title p{
-  font-size: 18px;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 5px 15px;
-}
-
-/* footer */
 .social-media-icon {
   width: var(--width-social-icons);
   fill: white;
@@ -111,5 +146,4 @@ body {
   .navbar > .container-fluid {
     width: auto;
   }
-
 }
