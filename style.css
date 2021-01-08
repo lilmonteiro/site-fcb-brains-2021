@@ -4,34 +4,18 @@
 }
 
 html {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
 body {
   --default-padding: 20px;
   --margin-social-icons: 5px;
-  --width-social-icons: 25px;  
-  
+  --width-social-icons: 25px;
+
   --wrapper-max-width: 1280px;
   --block-padding: 20px;
 
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(12, 60, 236, 1) 7%,
-    rgba(96, 70, 155, 1) 23%,
-    rgba(145, 76, 107, 1) 65%,
-    rgba(176, 80, 76, 1) 83%,
-    rgba(255, 172, 76, 1) 98%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(12, 60, 236, 1) 7%,
-    rgba(96, 70, 155, 1) 23%,
-    rgba(145, 76, 107, 1) 65%,
-    rgba(176, 80, 76, 1) 83%,
-    rgba(255, 172, 76, 1) 98%
-  );
   background: linear-gradient(
     180deg,
     rgba(12, 60, 236, 1) 7%,
@@ -44,16 +28,23 @@ body {
   font-family: "Supply Mono";
 }
 
-.wrapper-nav{
+.wrapper-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  max-width: var(--wrapper-max-width);       
+  max-width: var(--wrapper-max-width);
   margin: 0 auto;
-  padding-left: var(--block-padding);  
-  padding-right: var(--block-padding);                    
-}      
+  padding-left: var(--block-padding);
+  padding-right: var(--block-padding);
+}
+
+.wrapper-inner {
+  box-sizing: border-box;
+  max-width: var(--wrapper-max-width);
+  margin: 0 auto;
+  padding: var(--block-padding);
+}
 
 .social-media-bar {
   display: flex;
@@ -67,42 +58,58 @@ body {
   justify-content: center;
 }
 
-.social-media-text{
+.social-media-text {
   color: white;
   font-size: 14px;
   text-align: center;
   margin-bottom: calc(var(--margin-social-icons) * 2);
 }
-/* 
-.social-media-icons{
 
-} */
+.block {
+  height: 300px;
+}
 
-.social-media-icon{
+#a-fcb,
+#nossos-cases,
+#beneficios {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pill-title{
+  border: 2px solid white;
+  border-radius: 25px;
+  width: fit-content;
+}
+
+
+.pill-title p{
+  font-size: 18px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 15px;
+}
+
+/* footer */
+.social-media-icon {
   width: var(--width-social-icons);
   fill: white;
   margin: var(--margin-social-icons);
 }
 
-.logo-fcb img{
-  width: 100px;    
+.logo-fcb img {
+  width: 100px;
   height: auto;
   margin: calc(var(--margin-social-icons) * 6) 0 0 0;
 }
 
-.navbar > .container-fluid{
+.navbar > .container-fluid {
   width: 100%;
 }
 
-
 /* This applies from 768px onwards */
 @media (min-width: 1000px) {
-  body {
-    background: rgb(12, 60, 236);
-  }
-
-  .navbar > .container-fluid{
+  .navbar > .container-fluid {
     width: auto;
   }
-}
 
+}
