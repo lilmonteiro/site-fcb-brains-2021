@@ -2558,7 +2558,7 @@ textarea.form-control.is-invalid {
   -moz-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: none;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 25px;
@@ -2576,7 +2576,7 @@ textarea.form-control.is-invalid {
 .btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
 }
 .btn.disabled,
 .btn:disabled,
@@ -3708,7 +3708,7 @@ fieldset:disabled .btn {
   width: 100%;
 }
 .navbar-toggler {
-  padding: 0.25rem  0.75rem;
+  padding: 0.25rem 0 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -4021,12 +4021,12 @@ fieldset:disabled .btn {
 }
 .card-img-overlay {
   position: absolute;
-  top: 0;
+  top: unset;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border-radius: calc(0.25rem - 0.6px);
 }
 .card-img,
 .card-img-bottom,

@@ -1,6 +1,9 @@
- var start = function() {
+var start = function() {
 
-    console.log(1);
+    var btnInscrever = document.querySelector(".btn-inscrever");
+    btnInscrever.addEventListener("click", function(e) {
+        window.open('https://google.com');
+    })
 }
 
 window.addEventListener("load", start());

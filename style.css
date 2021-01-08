@@ -1,6 +1,19 @@
 @font-face {
-  font-family: "Supply Mono";
+  font-family: "Supply";
+  src: URL("assets/Supply-UltraLight.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Supply";
+  src: URL("assets/Supply-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Supply";
   src: URL("assets/Supply-Regular.otf") format("opentype");
+  font-weight: 400;
 }
 
 html {
@@ -12,11 +25,10 @@ body {
   --default-padding: 20px;
   --margin-social-icons: 5px;
   --width-social-icons: 25px;
-
   --wrapper-max-width: 1280px;
   --block-padding: 20px;
-
-  --title-font-size: 18px;
+  --title-font-size: 20px;
+  --paragraph: 5px;
 
   background: linear-gradient(
     180deg,
@@ -27,7 +39,8 @@ body {
     rgba(255, 172, 76, 1) 98%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3cec",endColorstr="#ffac4c",GradientType=1);
-  font-family: "Supply Mono";
+  font-family: "Supply";
+  font-size: 16px;
 }
 
 /* general settings */
@@ -72,16 +85,34 @@ body {
   padding: 5px 15px;
 }
 
-/* specic blocks */
-
-.header-container > * {
-  margin-bottom: var(--block-padding);
+.block-text {
+  line-height: 32px;
+  font-weight: 300;
+  margin: calc(var(--paragraph) * 3) 0 0 var(--paragraph);
 }
+
+.card-group {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-text {
+  font-size: 10.5px;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  font-size: 9.5px;
+}
+
+/* specic blocks */
 
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: calc(var(--block-padding) * 2);
 }
 
 .header-title,
@@ -102,6 +133,10 @@ body {
 
 .header-text {
   font-size: calc(var(--title-font-size) + 10px);
+}
+
+.header-container > * {
+  margin-bottom: var(--block-padding);
 }
 
 /* footer */
