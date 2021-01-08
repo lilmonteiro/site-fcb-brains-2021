@@ -11,7 +11,10 @@ html {
 body {
   --default-padding: 20px;
   --margin-social-icons: 5px;
-  --width-social-icons: 25px;
+  --width-social-icons: 25px;  
+  
+  --wrapper-max-width: 1280px;
+  --block-padding: 20px;
 
   background: -moz-linear-gradient(
     180deg,
@@ -41,6 +44,17 @@ body {
   font-family: "Supply Mono";
 }
 
+.wrapper-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: var(--wrapper-max-width);       
+  margin: 0 auto;
+  padding-left: var(--block-padding);  
+  padding-right: var(--block-padding);                    
+}      
+
 .social-media-bar {
   display: flex;
   flex-direction: column;
@@ -59,10 +73,10 @@ body {
   text-align: center;
   margin-bottom: calc(var(--margin-social-icons) * 2);
 }
-
+/* 
 .social-media-icons{
 
-}
+} */
 
 .social-media-icon{
   width: var(--width-social-icons);
@@ -76,10 +90,19 @@ body {
   margin: calc(var(--margin-social-icons) * 6) 0 0 0;
 }
 
+.navbar > .container-fluid{
+  width: 100%;
+}
+
+
 /* This applies from 768px onwards */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   body {
     background: rgb(12, 60, 236);
+  }
+
+  .navbar > .container-fluid{
+    width: auto;
   }
 }
 
