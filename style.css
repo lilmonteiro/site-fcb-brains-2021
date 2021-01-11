@@ -108,6 +108,7 @@ body {
 
 /* specic blocks */
 
+/* header block */
 .header-container {
   display: flex;
   flex-direction: column;
@@ -139,6 +140,7 @@ body {
   margin-bottom: var(--block-padding);
 }
 
+/* a fcb block */
 .brand-logo{
   height: 26px;
   margin: 7px;
@@ -154,6 +156,7 @@ body {
   padding: 15px;
 }
 
+/* o programa block */
 .porcentagem-container > *{
   margin: 0;
 }
@@ -177,6 +180,36 @@ body {
 .down-arrow{
   display: flex;
   justify-content: center;
+}
+
+/* pre requisitos block */
+.pre-requisitos-text{
+  margin-bottom:  calc(var(--paragraph) * 5);
+  margin-left: calc(var(--paragraph) * 4);
+}
+.pre-requisitos-text:last-child{
+  font-weight: 400;
+}
+
+.pill-list{
+  width: 80px;
+  height: 18px;
+  margin-left: -80px;
+  margin-right: 10px;
+  border: 1.4px solid white;
+  border-radius: 100px;
+}
+
+.list-group-item{
+  display: flex;
+  border: none;
+  padding: 0;
+  padding: 0 0 calc(var(--paragraph) * 2) calc(var(--paragraph) * 2);
+  min-width: 320px;
+}
+
+.requisitos-text{
+  font-weight: 300;
 }
 
 
