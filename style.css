@@ -30,6 +30,7 @@ body {
   --block-padding: 20px;
   --title-font-size: 20px;
   --paragraph: 5px;
+  --beneficios-icons-size:95px;
 
   background: linear-gradient(
     180deg,
@@ -69,7 +70,8 @@ body {
 
 #a-fcb,
 #nossos-cases,
-#beneficios {
+#beneficios,
+#cta-block {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -234,6 +236,14 @@ body {
   font-size: 1.2em;
 }
 
+.local-text a:active{
+  color: rgba(255, 255, 255, 0.571);
+}
+
+.local-text a:visited{
+  color: white;
+}
+
 .local-icon{
   height: 25px;
   margin: 0 calc(var(--margin-social-icons) * 2) 0 0;
@@ -250,9 +260,8 @@ body {
 
 .beneficios-item{
   margin: calc(var(--margin-social-icons) * 2);
-  width: 95px;
+  width: var(--beneficios-icons-size);
 }
-
 
 .beneficios-text{
   width: 100%;
@@ -261,6 +270,43 @@ body {
   margin: var(--margin-social-icons) 0;
 }
 
+/* o processo */
+#o-processo ol {
+  font-weight: 400;
+}
+
+/* cta block  */
+
+.cta-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-container p{
+  font-size: calc(var(--title-font-size) + 4px);
+  text-align: center;
+}
+.cta-container img{
+  max-width: 80px ;
+  margin-top: calc(var(--margin-social-icons) * 8)
+}
+
+#cta-final{
+  font-size: var(--title-font-size);
+}
+
+.cta-container > *{
+  margin-bottom: calc(var(--margin-social-icons) * 8);
+}
+
+/* turma */
+.turma-2019{
+  background: url(assets/turma-2019.jpg);
+  background-size: cover;
+  background-position: center;  
+}
 
 /* footer */
 
