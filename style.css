@@ -239,6 +239,29 @@ body {
   margin: 0 calc(var(--margin-social-icons) * 2) 0 0;
 }
 
+/* beneficios */
+
+.beneficios-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--default-padding);
+  justify-content: center;
+}
+
+.beneficios-item{
+  margin: calc(var(--margin-social-icons) * 2);
+  width: 95px;
+}
+
+
+.beneficios-text{
+  width: 100%;
+  font-size: 65%;
+  text-align: center;
+  margin: var(--margin-social-icons) 0;
+}
+
+
 /* footer */
 
 .social-media-bar {
