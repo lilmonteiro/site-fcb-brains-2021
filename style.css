@@ -550,18 +550,31 @@ a {
   }
 
   /* processo */
-  .processo-desktop{
+  .processo-desktop {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
   }
 
-  .processo-container{
+  .processo-container {
     margin-right: 200px;
   }
 
-  .processo-container ol{
+  .processo-container ol {
     line-height: 40px;
+  }
+
+  /* cta container  */
+  .cta-container p {
+    max-width: 400px;
+  }
+
+  .cta-container > * {
+    margin-bottom: calc(var(--margin-social-icons) * 4);
+  }
+
+  .cta-container > button {
+    margin-bottom: 0;
   }
 }
 
