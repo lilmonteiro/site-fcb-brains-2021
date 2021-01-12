@@ -363,6 +363,11 @@ a {
 
 /* This applies from 768px onwards */
 @media (min-width: 1000px) {
+  body{
+    font-size: 18px;
+    --wrapper-max-width: 1100px;
+  }
+
   .navbar > .container-fluid {
     width: auto;
   }
