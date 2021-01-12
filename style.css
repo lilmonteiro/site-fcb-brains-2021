@@ -121,6 +121,10 @@ body {
 /* specic blocks */
 
 /* header block */
+header {
+  position: relative;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -154,6 +158,14 @@ body {
 
 /* a fcb block */
 
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
 #a-fcb .block-text {
   margin-bottom: 30px;
 }
@@ -171,7 +183,7 @@ body {
   height: 50px;
 }
 
-.moca{
+.moca {
   height: 30px;
 }
 
@@ -389,7 +401,7 @@ a {
   display: block;
 }
 
-@media (min-width: 798px) and (max-width: 1100px) {
+@media (min-width: 798px) and (max-width: 1000px) {
   .brands_container {
     background-color: white;
     flex-direction: row;
@@ -402,10 +414,50 @@ a {
   body {
     font-size: 18px;
     --wrapper-max-width: 1100px;
+    --title-font-size: 20px;
+    --block-padding: 40px;
   }
 
+  /* header */
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .header-title,
+  .header-text {
+    text-align: left;
+  }
+
+  .header-text {
+    font-size: calc(var(--title-font-size) + 15px);
+  }
+
+  .header-flex{
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-container {
+    align-items: flex-start;
+    padding-top: calc(var(--block-padding) * 1.5);
+  }
+
+  .brain-icon-d {
+    margin-left: calc(var(--block-padding) * 4);
+    opacity: .8;
+  } 
+
+  .header-container > * {
+    margin-bottom: calc( var(--block-padding) / 2 );
+  }
+
+  /* a fcb */
   .brands_container {
-    padding: 5px
+    padding: 10px;
   }
 
   .brand-logo {
@@ -435,11 +487,21 @@ a {
   .video-desktop {
     display: flex;
     justify-content: center;
-    margin: var(--default-padding) 0;
+    margin: calc(var(--default-padding) * 2) 0;
   }
 
   .video-desktop iframe {
     min-width: 800px;
     min-height: 450px;
+  }
+
+  #noventa {
+    font-size: 200px;
+    padding-right: 30px;
+    line-height: initial;
+  }
+
+  #disclaimer {
+    max-width: 250px;
   }
 }
