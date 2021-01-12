@@ -514,6 +514,17 @@ a {
     border: 1.4px solid white;
     border-radius: 100px;
   }  
+
+  .pre-requisitos-flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .local-container{
+    min-width: 500px;
+    align-self: center;
+  }
+
 }
 
 @media (min-width: 768px) {
