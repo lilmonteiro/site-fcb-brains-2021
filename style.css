@@ -436,7 +436,7 @@ a {
     font-size: calc(var(--title-font-size) + 15px);
   }
 
-  .header-flex{
+  .header-flex {
     display: flex;
     justify-content: center;
   }
@@ -448,11 +448,11 @@ a {
 
   .brain-icon-d {
     margin-left: calc(var(--block-padding) * 4);
-    opacity: .8;
-  } 
+    opacity: 0.8;
+  }
 
   .header-container > * {
-    margin-bottom: calc( var(--block-padding) / 2 );
+    margin-bottom: calc(var(--block-padding) / 2);
   }
 
   /* a fcb */
@@ -473,6 +473,7 @@ a {
     height: 50px;
   }
 
+  /* navbar  */
   .navbar-brand img {
     width: 120px;
   }
@@ -495,6 +496,7 @@ a {
     min-height: 450px;
   }
 
+  /* programa */
   #noventa {
     font-size: 200px;
     padding-right: 30px;
@@ -503,5 +505,23 @@ a {
 
   #disclaimer {
     max-width: 250px;
+  }
+
+  .pill-list {
+    width: 40px;
+    height: 18px;
+    margin: 0 10px;
+    border: 1.4px solid white;
+    border-radius: 100px;
+  }  
+}
+
+@media (min-width: 768px) {
+  .list-group {
+    display: block;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 150px;
   }
 }
