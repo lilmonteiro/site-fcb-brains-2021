@@ -346,6 +346,7 @@ header {
   background: url(assets/turma-2019.jpg);
   background-size: cover;
   background-position: center;
+  min-height: 350px;
 }
 
 /* footer */
@@ -419,6 +420,15 @@ a {
   .beneficios-text {
     font-size: 14px;
     margin: 15px 0;
+  }
+
+  .turma-2019 {
+    background: url(assets/turma-2019.jpg);
+    background-color: #101010;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 400px;
   }
 }
 
@@ -575,6 +585,42 @@ a {
 
   .cta-container > button {
     margin-bottom: 0;
+  }
+
+  /* social bar */
+  .social-media-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: var(--block-padding);
+  }
+
+  .social-media-bar > *:not(.logo-fcb) {
+    margin: 0 15px;
+  }
+
+  .social-media-text {
+    margin-bottom: 0;
+  }
+  .logo-fcb img {
+    margin: 0;
+  }
+
+  .logo-fcb {
+    padding-left: 20px;
+    border-left: 1px solid white;
+  }
+  .turma-2019 {
+    background: url(assets/turma-2019.jpg);
+    background-color: #101010;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -50px;
+    min-height: 400px;
   }
 }
 
