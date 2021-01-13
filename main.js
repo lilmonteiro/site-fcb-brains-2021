@@ -16,5 +16,3 @@ var start = function() {
 }
 
 window.addEventListener("load", start());
-
-// 530
