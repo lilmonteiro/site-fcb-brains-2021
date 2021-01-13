@@ -48,6 +48,10 @@ body {
 
 /* general settings */
 
+.motion a{
+  text-decoration: none;
+}
+
 .wrapper-nav {
   display: flex;
   justify-content: center;
@@ -176,21 +180,21 @@ header {
 }
 
 .brand-logo {
-  height: 35px;
+  height: 20px;
   width: auto;
-  padding: 8px;
+  margin: 10px;
 }
 
 .brastemp {
-  height: 23px;
+  height: 10px;
 }
 
 .australian {
-  height: 60px;
+  height: 50px;
 }
 
 .moca {
-  height: 40px;
+  height: 30px;
 }
 
 .brands_container,
@@ -199,14 +203,14 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 150px;
   box-sizing: border-box;
 }
 
 .brands_container {
   background-color: white;
   flex-direction: row;
-  padding: 15px;
+  padding: 15px 25px;
 }
 
 .local-container {
@@ -275,12 +279,12 @@ header {
 .local-text {
   display: flex;
   align-items: flex-end;
-  font-size: 0.8em;
+  font-size: 16px;
 }
 
 .local-text a p {
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 16px;
 }
 
 .local-text a:active {
@@ -491,7 +495,7 @@ a {
   }
 
   .brain-icon-d {
-    margin-left: calc(var(--block-padding) * 4);
+    margin-left: calc(var(--block-padding) * 6);
     opacity: 0.8;
     min-height: 230px;
   }
@@ -501,22 +505,6 @@ a {
   }
 
   /* a fcb */
-  .brands_container {
-    padding: 10px;
-  }
-/* 
-  .brand-logo {
-    height: 30px;
-    padding: 8px;
-  }
-
-  .brastemp {
-    height: 10px;
-  }
-
-  .australian {
-    height: 50px;
-  } */
 
   /* navbar  */
   .navbar-brand img {
@@ -653,25 +641,21 @@ a {
     column-gap: 150px;
   }
 
+  .brands_container {
+    padding: 5px 25px;
+  }
+
   .brand-logo {
-    height: 35px;
+    height: 25px;
     width: auto;
-    padding: 5px;
+    margin: 10px;
   }
 
   .brastemp {
-    height: 18px;
+    height: 10px;
   }
 
   .australian {
-    height: 60px;
-  }
-
-  .moca {
-    height: 40px;
-  }
-
-  .local-text {
-    font-size: 1em;
+    height: 50px;
   }
 }
