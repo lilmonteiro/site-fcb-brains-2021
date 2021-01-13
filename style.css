@@ -177,6 +177,7 @@ header {
 
 .brand-logo {
   height: 35px;
+  width: auto;
   padding: 8px;
 }
 
@@ -503,10 +504,10 @@ a {
   .brands_container {
     padding: 10px;
   }
-
+/* 
   .brand-logo {
     height: 30px;
-    margin: 7px;
+    padding: 8px;
   }
 
   .brastemp {
@@ -515,7 +516,7 @@ a {
 
   .australian {
     height: 50px;
-  }
+  } */
 
   /* navbar  */
   .navbar-brand img {
@@ -654,7 +655,8 @@ a {
 
   .brand-logo {
     height: 35px;
-    padding: 4px;
+    width: auto;
+    padding: 5px;
   }
 
   .brastemp {

@@ -11,7 +11,6 @@ var start = function() {
         }else{
             document.querySelector(".navbar").style.backgroundColor = "#0e3aebc4";
         }
-        console.log(window.scrollY)
     })
 }
 
