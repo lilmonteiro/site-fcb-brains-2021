@@ -171,20 +171,20 @@ header {
 }
 
 .brand-logo {
-  height: 22px;
-  margin: 7px;
+  height: 35px;
+  padding: 8px;
 }
 
 .brastemp {
-  height: 10px;
+  height: 23px;
 }
 
 .australian {
-  height: 50px;
+  height: 60px;
 }
 
 .moca {
-  height: 30px;
+  height: 40px;
 }
 
 .brands_container,
@@ -193,7 +193,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 1000px;
+  border-radius: 100px;
   box-sizing: border-box;
 }
 
@@ -631,5 +631,22 @@ a {
     -webkit-columns: 2;
     -moz-columns: 2;
     column-gap: 150px;
+  }
+
+  .brand-logo {
+    height: 35px;
+    padding: 4px;
+  }
+
+  .brastemp {
+    height: 18px;
+  }
+
+  .australian {
+    height: 60px;
+  }
+
+  .moca {
+    height: 40px;
   }
 }
