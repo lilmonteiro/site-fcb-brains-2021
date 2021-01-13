@@ -52,6 +52,11 @@ body {
   text-decoration: none;
 }
 
+.typewrite:hover{
+  color: white;
+  cursor: default;
+}
+
 .wrapper-nav {
   display: flex;
   justify-content: center;
@@ -247,6 +252,11 @@ header {
 }
 
 /* pre requisitos block */
+
+.processo-container li {
+  margin-bottom: 20px;
+}
+
 .pre-requisitos-text {
   margin-bottom: calc(var(--paragraph) * 5);
   margin-left: calc(var(--paragraph) * 4);
@@ -323,7 +333,7 @@ header {
 
 /* o processo */
 #o-processo ol {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* cta block  */
@@ -575,11 +585,11 @@ a {
   }
 
   .processo-container {
-    margin-right: 200px;
+    margin-right: 0px;
   }
 
-  .processo-container ol {
-    line-height: 40px;
+  .processo-container li {
+    margin-bottom: 20px;
   }
 
   /* cta container  */
