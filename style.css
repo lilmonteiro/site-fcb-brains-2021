@@ -67,6 +67,7 @@ body {
   font-size: calc(var(--default-font-size) - 2px);
   text-decoration: underline;
   background-color: #0e3aebc4;
+  position: relative;
 }
 
 .wrapper-inner {
@@ -451,6 +452,15 @@ a {
     max-width: none;
     margin: 0 auto;
   }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
   /* header */
   .mobile {
     display: none;
