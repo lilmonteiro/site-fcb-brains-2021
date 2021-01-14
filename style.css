@@ -564,7 +564,7 @@ a {
   }
 
   .brain-icon-d {
-    margin-left: calc(var(--block-padding) * 6);
+    margin-left: calc(var(--block-padding) * 5);
     opacity: 0.8;
     min-height: 230px;
   }
