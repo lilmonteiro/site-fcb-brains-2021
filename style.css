@@ -48,11 +48,11 @@ body {
 
 /* general settings */
 
-.motion a{
+.motion a {
   text-decoration: none;
 }
 
-.typewrite:hover{
+.typewrite:hover {
   color: white;
   cursor: default;
 }
@@ -419,6 +419,65 @@ a {
   display: block;
 }
 
+.cookie-bar {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: calc(var(--default-padding) * 1) calc(var(--default-padding) * 1);
+  min-height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.cookie-bar.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper-cookie {
+  max-width: var(--wrapper-max-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cookie-text > * {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.cookie-text p:first-child {
+  font-size: calc(var(--default-font-size) + 2px);
+  font-weight: 500;
+}
+.cookie-text p:last-child {
+  font-size: calc(var(--default-font-size) - 2px);
+
+  margin-bottom: 0;
+}
+
+#cookie-btn {
+  height: fit-content;
+  margin: 15px;
+  border: none;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+#cookie-btn:hover {
+  background-color: rgba(255, 255, 255, 0.619);
+}
+
+#cookie-btn:hover, #cookie-btn:visited, #cookie-btn:active, #cookie-btn:focus{
+  border: none;
+  outline: none;
+}
+
 @media (min-width: 798px) and (max-width: 1000px) {
   .brands_container {
     background-color: white;
@@ -640,6 +699,30 @@ a {
     background-position-y: -50px;
     min-height: 400px;
   }
+  /* .cookie-text {
+  } */
+ 
+  .cookie-text > * {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+  }
+
+  .cookie-text p:first-child {
+    font-size: calc(var(--default-font-size) + 4px);
+    font-weight: 500;
+  }
+  .cookie-text p:last-child {
+    font-size: calc(var(--default-font-size));
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  #cookie-btn {
+    margin: 30px;
+    border: none;
+    width: 200px;
+    font-size: 15px; 
+  }
 }
 
 @media (min-width: 768px) {
@@ -667,5 +750,8 @@ a {
 
   .australian {
     height: 50px;
+  }
+  .wrapper-cookie {
+    flex-direction: row;
   }
 }
