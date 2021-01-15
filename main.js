@@ -10,14 +10,23 @@ var start = function() {
         window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
     })
 
+    var btnInscreverTop = document.querySelector("#cta-top");
+    btnInscreverTop.addEventListener("click", function(e) {
+        window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
+    })
+
     cookieMethod();
 
 
     window.addEventListener("scroll", function(e) {
         if (window.scrollY > 150) {
             document.querySelector(".navbar").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+            document.querySelector("#cta-top").style.backgroundColor = "white";
+            document.querySelector("#cta-top").style.color = "black";
         } else {
             document.querySelector(".navbar").style.backgroundColor = "#0e3aebc4";
+            document.querySelector("#cta-top").style.backgroundColor = "black";
+            document.querySelector("#cta-top").style.color = "white";
         }
     })
 
