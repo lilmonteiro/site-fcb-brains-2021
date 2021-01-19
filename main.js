@@ -37,7 +37,6 @@ var start = function() {
             'event_label': 'video-mobile'
         });
 
-        console.log(1)
     });
 
     var videoDesktop = document.querySelector(".video-desktop");
@@ -46,10 +45,7 @@ var start = function() {
             'event_category': 'video',
             'event_label': 'video-desktop'
         });
-
-        console.log(2)
     });
-
 
     cookieMethod();
 
