@@ -1,19 +1,55 @@
 var start = function() {
 
+    var btnInscreverTop = document.querySelector("#cta-top");
+    btnInscreverTop.addEventListener("click", function(e) {
+        gtag('event', 'click', {
+            'event_category': 'inscricao',
+            'event_label': 'cta-menu-fixo'
+        })
+
+        window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
+    });
+
     var btnInscrever = document.querySelector("#cta-1");
     btnInscrever.addEventListener("click", function(e) {
+        gtag('event', 'click', {
+            'event_category': 'inscricao',
+            'event_label': 'cta-header'
+        });
+
         window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
-    })
+    });
 
     var btnInscreverFinal = document.querySelector("#cta-final");
     btnInscreverFinal.addEventListener("click", function(e) {
-        window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
-    })
+        gtag('event', 'click', {
+            'event_category': 'inscricao',
+            'event_label': 'cta-footer'
+        });
 
-    var btnInscreverTop = document.querySelector("#cta-top");
-    btnInscreverTop.addEventListener("click", function(e) {
         window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
-    })
+    });
+
+    var videoMobile = document.querySelector(".video-mobile");
+    videoMobile.addEventListener("click", function(e) {
+        gtag('event', 'play', {
+            'event_category': 'video',
+            'event_label': 'video-mobile'
+        });
+
+        console.log(1)
+    });
+
+    var videoDesktop = document.querySelector(".video-desktop");
+    videoDesktop.addEventListener("click", function(e) {
+        gtag('event', 'play', {
+            'event_category': 'video',
+            'event_label': 'video-desktop'
+        });
+
+        console.log(2)
+    });
+
 
     cookieMethod();
 
