@@ -118,6 +118,8 @@ var start = function() {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+
 }
 
 var cookieMethod = function() {
@@ -134,12 +136,20 @@ var cookieMethod = function() {
 
                 setTimeout(function() {
                     document.querySelector(".cookie-bar").style.visibility = "visible";
+                    var body = document.querySelector("body");
+                    var cookieBar = document.querySelector(".cookie-bar");
+                    body.removeChild(cookieBar)
                 }, 100)
 
             }, 200);
+
+
         });
     } else {
         document.querySelector(".cookie-bar").style.display = "none";
+        var body = document.querySelector("body");
+        var cookieBar = document.querySelector(".cookie-bar");
+        body.removeChild(cookieBar)
     }
 }
 
