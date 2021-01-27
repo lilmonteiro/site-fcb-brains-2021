@@ -48,6 +48,12 @@ body {
 
 /* general settings */
 
+small{
+  display: contents;
+  font-size: 11px;
+  font-style: italic;
+}
+
 .motion a {
   text-decoration: none;
 }
@@ -281,6 +287,7 @@ header {
   padding: 0;
   padding: 0 0 calc(var(--paragraph) * 2) calc(var(--paragraph) * 2);
   min-width: 320px;
+  align-items: center;
 }
 
 .requisitos-text {
