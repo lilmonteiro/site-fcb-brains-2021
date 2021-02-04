@@ -48,7 +48,7 @@ body {
 
 /* general settings */
 
-small{
+small {
   display: contents;
   font-size: 11px;
   font-style: italic;
@@ -99,9 +99,23 @@ small{
 
 #a-fcb,
 #nossos-cases,
-#beneficios,
-#cta-block {
+#beneficios {
   background-color: rgba(0, 0, 0, 0.3);
+}
+#cta-final {
+  background-color: rgb(0, 64, 255);
+}
+
+#cta-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#cta-final:active {
+  background-color: rgb(32, 60, 145);
 }
 
 .pill-title {
@@ -351,6 +365,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  border-radius: 50px;
+  margin: 50px;
 }
 
 .cta-container p {
@@ -481,7 +498,10 @@ a {
   background-color: rgba(255, 255, 255, 0.619);
 }
 
-#cookie-btn:hover, #cookie-btn:visited, #cookie-btn:active, #cookie-btn:focus{
+#cookie-btn:hover,
+#cookie-btn:visited,
+#cookie-btn:active,
+#cookie-btn:focus {
   border: none;
   outline: none;
 }
@@ -709,7 +729,7 @@ a {
   }
   /* .cookie-text {
   } */
- 
+
   .cookie-text > * {
     margin-bottom: 5px;
     font-family: sans-serif;
@@ -729,11 +749,16 @@ a {
     margin: 30px;
     border: none;
     width: 200px;
-    font-size: 15px; 
+    font-size: 15px;
   }
 }
 
 @media (min-width: 768px) {
+
+  .cta-container {
+    width: 100%;
+  }
+
   .list-group {
     display: block;
     columns: 2;
