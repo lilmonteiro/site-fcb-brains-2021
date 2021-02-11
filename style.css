@@ -99,7 +99,8 @@ small {
 
 #a-fcb,
 #nossos-cases,
-#beneficios {
+#pre-requisitos,
+#cronograma {
   background-color: rgba(0, 0, 0, 0.3);
 }
 #cta-final {
@@ -111,8 +112,6 @@ small {
   align-items: center;
   justify-content: center;
 }
-
-
 
 #cta-final:active {
   background-color: rgb(32, 60, 145);
@@ -270,6 +269,33 @@ header {
 .down-arrow {
   display: flex;
   justify-content: center;
+}
+
+/* depoimentos */
+.depoimentos-content {
+  display: block;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video iframe {
+  min-width: 300px;
+  min-height: 530px;
+}
+
+.video p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-right: unset;
+  margin-left: unset;
+  max-width: unset;
+  line-height: 40px;
+  margin-bottom: 20px;
 }
 
 /* pre requisitos block */
@@ -626,6 +652,11 @@ a {
     min-height: 450px;
   }
 
+  .video-desktop iframe {
+    min-width: 300px;
+    min-height: 530px;
+  }
+
   /* programa */
   #noventa {
     font-size: 200px;
@@ -754,7 +785,6 @@ a {
 }
 
 @media (min-width: 768px) {
-
   .cta-container {
     width: 100%;
   }
@@ -787,4 +817,20 @@ a {
   .wrapper-cookie {
     flex-direction: row;
   }
+
+  .video {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .video p {
+    font-size: 25px;
+    margin-right: 50px;
+    margin-left: -50px;
+    max-width: 400px;
+    line-height: 40px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
 }
