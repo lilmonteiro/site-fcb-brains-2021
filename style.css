@@ -283,7 +283,7 @@ header {
   align-items: center;
 }
 
-.video iframe {
+.video .frame-depoimentos {
   min-width: 300px;
   min-height: 530px;
 }
@@ -650,11 +650,6 @@ a {
   .video-desktop iframe {
     min-width: 800px;
     min-height: 450px;
-  }
-
-  .video-desktop iframe {
-    min-width: 300px;
-    min-height: 530px;
   }
 
   /* programa */
