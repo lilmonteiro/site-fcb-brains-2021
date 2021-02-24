@@ -1,34 +1,5 @@
 var start = function() {
 
-    var btnInscreverTop = document.querySelector("#cta-top");
-    btnInscreverTop.addEventListener("click", function(e) {
-        gtag('event', 'click', {
-            'event_category': 'inscricao',
-            'event_label': 'cta-menu-fixo'
-        })
-
-        window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
-    });
-
-    var btnInscrever = document.querySelector("#cta-1");
-    btnInscrever.addEventListener("click", function(e) {
-        gtag('event', 'click', {
-            'event_category': 'inscricao',
-            'event_label': 'cta-header'
-        });
-
-        window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
-    });
-
-    var btnInscreverFinal = document.querySelector("#cta-final");
-    btnInscreverFinal.addEventListener("click", function(e) {
-        gtag('event', 'click', {
-            'event_category': 'inscricao',
-            'event_label': 'cta-footer'
-        });
-
-        window.open('https://matchbox.digital/estagio-fcb-brasil-2021-inscricao');
-    });
 
     var videoMobile = document.querySelector(".video-mobile");
     videoMobile.addEventListener("click", function(e) {
@@ -49,18 +20,6 @@ var start = function() {
 
     cookieMethod();
 
-
-    window.addEventListener("scroll", function(e) {
-        if (window.scrollY > 150) {
-            document.querySelector(".navbar").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-            document.querySelector("#cta-top").style.backgroundColor = "white";
-            document.querySelector("#cta-top").style.color = "black";
-        } else {
-            document.querySelector(".navbar").style.backgroundColor = "#0e3aebc4";
-            document.querySelector("#cta-top").style.backgroundColor = "black";
-            document.querySelector("#cta-top").style.color = "white";
-        }
-    })
 
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;

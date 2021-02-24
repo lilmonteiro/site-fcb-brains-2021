@@ -394,14 +394,16 @@ header {
   background-color: white;
   border-radius: 50px;
   margin: 50px;
+  padding: 20px;
 }
 
 .cta-container p {
   font-size: calc(var(--title-font-size) + 4px);
   text-align: center;
+  margin: 0;
 }
 .cta-container img {
-  max-width: 80px;
+  display: none;
   margin-top: calc(var(--margin-social-icons) * 8);
 }
 
@@ -409,9 +411,9 @@ header {
   font-size: var(--title-font-size);
 }
 
-.cta-container > * {
+/* .cta-container > * {
   margin-bottom: calc(var(--margin-social-icons) * 8);
-}
+} */
 
 /* turma */
 .turma-2019 {
