@@ -1,6 +1,5 @@
 var start = function() {
 
-
     var videoMobile = document.querySelector(".video-mobile");
     videoMobile.addEventListener("click", function(e) {
         gtag('event', 'play', {
@@ -8,7 +7,7 @@ var start = function() {
             'event_label': 'video-mobile'
         });
 
-    });
+    }); 
 
     var videoDesktop = document.querySelector(".video-desktop");
     videoDesktop.addEventListener("click", function(e) {
